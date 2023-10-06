@@ -1,0 +1,508 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        
+        
+    <!--MAIN CSS-->    
+        <link rel="stylesheet" href="style.css">
+        
+        <title>Portafolio Responsive</title>
+    </head>
+    <body>
+        <!--Barra lateral-->
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <aside class="sidebar" id="sidebar">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <a href="index.html" class="nav__logo-text">L</a>
+                </div>
+
+                <div class="nav__menu">
+                    <div class="menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link active-link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#sobre_mi" class="nav__link">Sobre Mí</a>
+                            </li>                        
+                            <li class="nav__item">
+                                <a href="#trabajos" class="nav__link">Trabajos</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#conclusion" class="nav__link">Conclusión</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#bibliografia" class="nav__link">Bibliografía</a>
+                            </li>
+                        </ul>
+                    </div>       
+                </div>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark conclusion__modal-close"></i> 
+                </div>
+            
+            </nav>
+        </aside>  
+    <!--Main-->
+        <main class="main">
+        <!--Home-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    
+                    <img src="imagen.png"alt =""class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">Portafolio Electrónico</h1>
+                        <h3 class="home__subtitle">Desarrollo de Aplicaciones web</h3>
+                        <p class="home__description">Hola, mi nombre es Leonardo Palomino y 
+                            compartiré mi trabajo y progreso a lo largo del curso. También, incluiré 
+                            reflexiones sobre lo que he aprendido y cómo me ha ayudado 
+                            el curso a desarrollar mis habilidades. </p>
+                        <a href="#sobre_mi" class="button"><i class="fa-regular fa-user button__icon"></i>
+                        Más Sobre Mí
+                        </a>
+                    </div>
+
+                    <div class="my__info">
+                        <div class="info__item">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!--About-->
+            <section class="about section" id="sobre_mi">
+                <h2 data-heading="Presentación" class="section__title">Sobre mí</h2>
+
+                <div class="about__container container grid">
+                    <img src="Leonardo Palomino.png" alt=""class="about__img">
+                    <div class="about__data">
+
+                        <h3 class="about__heading">Mi nombre es Leonardo Daniel Palomino Condor</h3>
+                        <p class="about__description">Soy un estudiante entusiasta de la UNCP en el noveno semestre de Ingeniería de Sistemas. Mi portafolio electrónico te invita a descubrir mi crecimiento y logros en el emocionante campo del desarrollo web.
+                            Desde que ingresé a la universidad, quedé cautivado por la fusión entre tecnología y creatividad. Mi formación en Ingeniería de Sistemas me proporcionó bases sólidas en informática; además, en el curso de Desarrollo de Aplicaciones Web estoy encontrando mucho interés.
+                            Así mismo, algunas de mis habilidades para el desarrollo de este curso son: </p>
+                            <div class="about__info grid">
+                                <div class="about__box">
+                                    <i class="fa-solid fa-dumbbell about__icon"></i>
+                                    <h3 class="about__title">Perseverancia</h3>
+                                    <span class="about__subtitle">Superar obstáculos</span>
+                                </div>
+                                <div class="about__box">
+                                    <i class="fa-solid fa-book about__icon"></i>
+                                    <h3 class="about__title">Dedicación</h3>
+                                    <span class="about__subtitle">Compromiso total</span>
+                                </div>
+                                <div class="about__box">
+                                    <i class="fa-solid fa-magnifying-glass about__icon"></i>
+                                    <h3 class="about__title">Curiosidad</h3>
+                                    <span class="about__subtitle">Aprendizaje constante</span>
+                                </div>
+                            </div>
+                            
+                    </div>
+                </div>
+            </section>
+
+        <!--Work-->
+        <section class="work section" id="trabajos">
+            <h2 data-heading="Mi Portafolio" class="section__title">Trabajos</h2>
+            <div class="work__filters">
+                
+                <span class="work__item active-work" data-filter=".sem01">Semana 1</span>
+                <span class="work__item"data-filter=".sem02">Semana 2</span>
+                <span class="work__item"data-filter=".sem03">Semana 3</span>
+                <span class="work__item"data-filter=".sem04">Semana 4</span>
+                <span class="work__item"data-filter=".sem05">Semana 5</span>
+                <span class="work__item"data-filter=".sem06">Semana 6</span>
+                <span class="work__item"data-filter=".sem07">Semana 7</span>
+                
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix sem01">
+                    <img src="what.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 01 - ¿Qué Aprendí?</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">TEMAS APRENDIDOS</h3>
+                        <p class="details__description">En esta primera semana del curso he aprendido a utilizar Visual Studio Code, también he aprendido los conceptos básicos de HTML y cómo utilizar las abreviaturas de Emmet para acelerar la escritura de código HTML. He descubierto cómo estructurar una página web utilizando etiquetas como &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, y cómo crear elementos como encabezados, párrafos y listas. También he aprendido a aplicar clases y IDs a elementos HTML y a utilizar atajos de teclado para expandir automáticamente abreviaturas Emmet en código completo. </p>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem01">
+                    <img src="how.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 01 - ¿Cómo Aprendí?</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">HERRAMIENTAS PARA MI APRENDIZAJE</h3>
+                        <p class="details__description">En esta primera semana, mi aprendizaje se ha beneficiado enormemente gracias a la guía del docente. También comencé a explorar tutoriales y documentación sobre HTML y Emmet en la web para comprender los conceptos básicos. 
+                            Luego, apliqué lo que aprendí creando páginas web simples en Visual Studio Code, experimentando con etiquetas HTML y utilizando las abreviaturas de Emmet para agilizar mi escritura de código.</p>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem01">
+                    <img src="result.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 01 - Resultados</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">PRÁCTICAS RESUELTAS</h3>
+                        <p class="details__description_1">Los ejercicios de la semana 1 consistían desarrollar ejercicios con Emmet y atajos de teclado. <br><br>A continuación se muestran los ejercicios desarrollados en la primera semana:</p>
+                        <ul class="details__info">
+                            <li>Ver link -> <span><a href="https://github.com/LeonardoPalominoCondor/Portafolio_Desarrollo_Web/tree/3c527c7ed0db11dd88cf86edf28046061944b15b/Semana01"target="_blank">PRÁCTICA SEMANA 1</a></span></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem02">
+                    <img src="what.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 02 - ¿Qué Aprendí?</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">TEMAS APRENDIDOS</h3>
+                        <p class="details__description">En esta segunda semana del curso de desarrollo web, he aprendido a crear páginas web más dinámicas y atractivas al utilizar CSS para dar estilo a los elementos HTML que aprendí a estructurar la semana pasada. He comprendido cómo funcionan los selectores de CSS, como los selectores de tipo, clase e ID, para aplicar estilos específicos a los elementos de mi página. También he aprendido a hacer que mi diseño web sea más responsivo mediante el uso de media queries, lo que permite que la página se adapte a diferentes tamaños de pantalla.</p>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem02">
+                    <img src="how.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 02 - ¿Cómo Aprendí?</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">HERRAMIENTAS PARA MI APRENDIZAJE</h3>
+                        <p class="details__description">Mi proceso de aprendizaje durante esta segunda semana se basó principlamente en el estudio autodidacta, la práctica activa y colaboración con mis compañeros de curso. Para entender mejor los conceptos de CSS, comencé investigando en línea y leyendo documentación relacionada con selectores, propiedades y reglas de estilo CSS. Luego, apliqué estos conocimientos directamente a través de ejercicios prácticos en Visual Studio Code, experimentando con diferentes estilos y efectos visuales en elementos HTML.</p>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem02">
+                    <img src="result.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 02 - Resultados</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">PRÁCTICAS RESUELTAS</h3>
+                        <p class="details__description_1">Los ejercicios de la semana 2 están centrados en usar fragmentos de código HTML y CSS para crear páginas web con contenido estructurado y estilizado. <br><br>A continuación se muestran los ejercicios desarrollados en la segunda semana:</p>
+                        <ul class="details__info">
+                            <li>Ver link -> <span><a href="https://github.com/LeonardoPalominoCondor/Portafolio_Desarrollo_Web/tree/3c527c7ed0db11dd88cf86edf28046061944b15b/Semana02"target="_blank">PRÁCTICA SEMANA 2</a></span></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem03">
+                    <img src="what.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 03 - ¿Qué Aprendí?</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">TEMAS APRENDIDOS</h3>
+                        <p class="details__description">Durante esta tercera semana de mi curso de desarrollo web, he profundizado en la creación de diseños responsivos y estilos atractivos para mis páginas web. Aprendí a utilizar conceptos de HTML semántico para estructurar mi contenido de manera más significativa, lo que no solo mejora la accesibilidad, sino que también facilita la implementación de estilos CSS coherentes. Además, dominé técnicas avanzadas como Flexbox y Grids para controlar la disposición y el diseño de mis elementos de manera eficiente y adaptable a diferentes pantallas. También descubrí cómo incorporar fuentes personalizadas utilizando Google Fonts para darle un toque único a mis proyectos.</p>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem03">
+                    <img src="how.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 03 - ¿Cómo Aprendí?</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">HERRAMIENTAS PARA MI APRENDIZAJE</h3>
+                        <p class="details__description">Para comprender estos conceptos, recurrí a la ayuda del docente, recursos en línea, tutoriales especializados y la documentación oficial de CSS, Flexbox y Grid. A través de la práctica activa, creé algunos proyectos en los que apliqué estas técnicas, lo que me permitió experimentar y consolidar mi comprensión.</p>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem03">
+                    <img src="result.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 03 - Resultados</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">PRÁCTICAS RESUELTAS</h3>
+                        <p class="details__description_1">La práctica de la semana 3 fue realizar un diseño responsivo con HTML semántico y CSS usando flexbox, grids y float. Además de usar Google fonts para el tipo de letra. <br><br>A continuación se muestran los ejercicios desarrollados en la tercera semana:</p>
+                        <ul class="details__info">
+                            <li>Ver link -> <span><a href="https://github.com/LeonardoPalominoCondor/Portafolio_Desarrollo_Web/tree/3c527c7ed0db11dd88cf86edf28046061944b15b/Semana03"target="_blank">PRÁCTICA SEMANA 3</a></span></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem04">
+                    <img src="what.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 04 - ¿Qué Aprendí?</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">TEMAS APRENDIDOS</h3>
+                        <p class="details__description">En esta cuarta semana del curso, he ampliado mi comprensión sobre cómo crear páginas web interactivas y dinámicas mediante la combinación de HTML, CSS y JavaScript. He aprendido a aprovechar las bibliotecas de estilos como Bootstrap y Tailwind CSS para diseñar componentes y diseños atractivos de manera eficiente. Además, he explorado cómo vincular archivos JavaScript externos e incorporar código JavaScript directamente en mis páginas HTML para agregar funcionalidades como cálculos de media y operaciones matemáticas.</p>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem04">
+                    <img src="how.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 04 - ¿Cómo Aprendí?</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">HERRAMIENTAS PARA MI APRENDIZAJE</h3>
+                        <p class="details__description">Durante la cuarta semana, aprendí principalmente a través de la sesiones en la aula y de la práctica. Usé bibliotecas de estilos como Bootstrap viendo su documentación primero, para así poder diseñar páginas web atractivas y utilicé JavaScript para agregar interactividad.</p>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem04">
+                    <img src="result.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 04 - Resultados</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">PRÁCTICAS RESUELTAS</h3>
+                        <p class="details__description_1">Los ejercicios de la semana 4 se enfocaron en la incorporación de bibliotecas de estilos como Bootstrap o Tailwind CSS, así como el uso de JavaScript para agregar interacción y funcionalidad a las páginas web. <br><br>A continuación se muestran los ejercicios desarrollados en la cuarta semana:</p>
+                        <ul class="details__info">
+                            <li>Ver link -> <span><a href="https://github.com/LeonardoPalominoCondor/Portafolio_Desarrollo_Web/tree/3c527c7ed0db11dd88cf86edf28046061944b15b/Semana04"target="_blank">PRÁCTICA SEMANA 4</a></span></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem05">
+                    <img src="what.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 05 - ¿Qué Aprendí?</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">TEMAS APRENDIDOS</h3>
+                        <p class="details__description">En esta quinta semana del curso de desarrollo web, he adquirido una comprensión más profunda de los conceptos fundamentales que respaldan la creación de aplicaciones interactivas utilizando HTML, CSS y JavaScript. También profundicé en el uso de las capacidades de dibujo de HTML canvas y cómo aplicar estilos con CSS para lograr diseños personalizados. Además, gané experiencia en la organización y estructuración de mi código JavaScript para garantizar un desarrollo más eficiente y mantenible.</p>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem05">
+                    <img src="how.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 05 - ¿Cómo Aprendí?</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">HERRAMIENTAS PARA MI APRENDIZAJE</h3>
+                        <p class="details__description">Mi aprendizaje en esta semana se basó en una combinación de investigación, práctica y experimentación. Esta semana me ayudó a comprender en profundidad los conceptos del desarrollo web interactivo y me brindó las habilidades necesarias para crear aplicaciones personalizadas.</p>
+                        
+                    </div>
+                </div>
+                <div class="work__card mix sem05">
+                    <img src="result.jpg" alt=""class="work__img">
+                    <h3 class="work__title">SEMANA 05 - Resultados</h3>
+                    <span class="work__button">Ver más 
+                        <i class="fa-regular fa-circle-right work__button-icon"></i>
+                    </span>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">PRÁCTICAS RESUELTAS</h3>
+                        <p class="details__description_1">La prática de la semana 5 fue construir una aplicación que muestre un reloj analógico y otra que muestre un gráfico de pastel usando HTML canvas, CSS y JavaScript.<br><br> A continuación se muestran los ejercicios desarrollados en la quinta semana:</p>
+                        <ul class="details__info">
+                            <li>Ver link -> <span><a href="https://github.com/LeonardoPalominoCondor/Portafolio_Desarrollo_Web/tree/3c527c7ed0db11dd88cf86edf28046061944b15b/Semana05"target="_blank">PRÁCTICA SEMANA 5</a></span></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--Portfolio Popup-->
+        
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="fa-solid fa-xmark"></i></span>
+                    <div class="pp__thumbnail">
+                        <img src class="portfolio__popup-img"></im>
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <div class="portfolio__popup-subtitle"><span>Design</span></div>
+                        <div class="portfolio__popup-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Conclusiones y recomendaciones-->
+        <section class="conclusion section" id="conclusion">
+            <h2 data-heading="Conclusión" class="section__title">Conclusión y Recomendaciones</h2>
+
+            <div class="conclusion__container container grid">
+                <div class="conclusion__content">
+                    <div>
+                        <i class="fa-solid fa-flag-checkered conclusion__icon"></i>
+                        <h3 class="conclusion__title">Conclusión</h3>
+                        
+                    </div>
+                    <span class="conclusion__button">
+                        Ver <i class="fa-regular fa-circle-right conclusion__button-icon"></i>
+                    </span>
+                    <div class="conclusion__modal">
+                        <div class="conclusion__modal-content">
+                            <i class="fa-solid fa-xmark conclusion__modal-close"></i>     
+                            <h3 class="conclusion__modal-title">Conclusión</h3>
+                            <p class="conclusion__modal-description">
+                                En conclusión, durante esta primera parte del curso de desarrollo web, he tenido un gran aprendizaje que abarca una variedad de conceptos y tecnologías esenciales en la creación de sitios web interactivos y dinámicos. He adquirido habilidades fundamentales en HTML para estructurar el contenido, CSS para el diseño y la presentación, y JavaScript para la interacción y la lógica. Además, he aprendido a utilizar bibliotecas y herramientas populares como Bootstrap, Tailwind CSS y HTML canvas para mejorar la eficiencia y la estética de mis proyectos. 
+                                A través del trabajo en clase, el estudio autodidacta, práctica activa y colaboración con otros estudiantes, he fortalecido mis habilidades y conocimientos en desarrollo web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclusion__content">
+                    <div>
+                        <i class="fa-regular fa-thumbs-up conclusion__icon"></i>
+                        <h3 class="conclusion__title">Recomendaciones</h3>
+                        
+                    </div>
+                    <span class="conclusion__button">
+                        Ver <i class="fa-regular fa-circle-right conclusion__button-icon"></i>
+                    </span>
+                    <div class="conclusion__modal">
+                        <div class="conclusion__modal-content">
+                            <i class="fa-solid fa-xmark conclusion__modal-close"></i>     
+                            <h3 class="conclusion__modal-title">Recomendaciones</h3>
+                            <p class="conclusion__modal-description">
+                                Aquí se presentan algunas recomendaciones para avanzar en el aprendizaje para el curso:
+                            </p>
+
+                            <ul class="conclusion__modal-conclusions grid">
+                                <li class="conclusion__modal-conclusion">
+                                    <i class="fa-regular fa-circle-check conclusion__modal-icon"></i>
+                                    <p class="conclusion__modal-info">Crea proyectos personales, desafíos de código o contribuye a proyectos de código abierto relacionados con desarrollo web.</p>
+                                </li>
+                                <li class="conclusion__modal-conclusion">
+                                    <i class="fa-regular fa-circle-check conclusion__modal-icon"></i>
+                                    <p class="conclusion__modal-info">Aprovecha la abundante documentación en línea y tutoriales disponibles. Por ejemplo plataformas como MDN Web Docs, W3Schools y Stack Overflow</p>
+                                </li>
+                                <li class="conclusion__modal-conclusion">
+                                    <i class="fa-regular fa-circle-check conclusion__modal-icon"></i>
+                                    <p class="conclusion__modal-info">Participa en discusiones, comparte tus conocimientos y busca consejos. La colaboración con otros desarrolladores puede proporcionar perspectivas valiosas y soluciones</p>
+                                </li>
+                                <li class="conclusion__modal-conclusion">
+                                    <i class="fa-regular fa-circle-check conclusion__modal-icon"></i>
+                                    <p class="conclusion__modal-info">Mantente al día con las últimas tendencias, estándares y tecnologías. Sigue blogs, podcasts y conferencias relacionadas con el desarrollo web</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Bibliografía-->
+        <section class="doc section" id="bibliografia">
+            <h2 data-heading="Bibliografía" class="section__title">Referencias y Documentación</h2>
+            
+            <div class="doc__container container grid">
+                <div class="paragraph1">
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Visual Studio Code </h3>
+                            <p class="timeline__text">Editor de código (HTML, CSS, JavaScript)</p>
+                            <span class="timeline__link"><i class="fa-solid fa-rocket"></i>
+                                <a href="https://code.visualstudio.com/docs"target="_blank">Ver enlace</a>
+                            </span>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Emmet</h3>
+                            <p class="timeline__text">Complemento para editores de texto (HTML)</p>
+                            <span class="timeline__link"><i class="fa-solid fa-rocket"></i>
+                                <a href="https://docs.emmet.io/cheat-sheet/"target="_blank">Ver enlace</a>
+                            </span>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Bootstrap</h3>
+                            <p class="timeline__text">Framework para diseño y desarrollo de sitios web (CSS, JavaScript)</p>
+                            <span class="timeline__link"><i class="fa-solid fa-rocket"></i>
+                                <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"target="_blank">Ver enlace</a>
+                            </span>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">JavaScript</h3>
+                            <p class="timeline__text">Lenguaje para crear páginas interactivas</p>
+                            <span class="timeline__link"><i class="fa-solid fa-rocket"></i>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"target="_blank">Ver enlace</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paragraph2">
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">HTML</h3>
+                            <p class="timeline__text">Lenguaje de marcado para páginas web</p>
+                            <span class="timeline__link"><i class="fa-solid fa-rocket"></i>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"target="_blank">Ver enlace</a>
+                            </span>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">CSS</h3>
+                            <p class="timeline__text">Lenguaje para presentación y diseño de páginas web</p>
+                            <span class="timeline__link"><i class="fa-solid fa-rocket"></i>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"target="_blank">Ver enlace</a>
+                            </span>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Tailwind CSS</h3>
+                            <p class="timeline__text">Framework para el diseño de páginas web (CSS)</p>
+                            <span class="timeline__link"><i class="fa-solid fa-rocket"></i>
+                                <a href="https://tailwindcss.com/docs/installation"target="_blank">Ver enlace</a>
+                            </span>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">React</h3>
+                            <p class="timeline__text">Biblioteca para crear interfaces de usuarios interactivas y dinámicas (JavaScript)</p>
+                            <span class="timeline__link"><i class="fa-solid fa-rocket"></i>
+                                <a href="https://es.react.dev/learn"target="_blank">Ver enlace</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        </main>
+        
+        <script src="mixitup.min.js"></script>
+
+        <script src ="main.js"></script>
+
+        
+        
+    </body>
+    </html>
